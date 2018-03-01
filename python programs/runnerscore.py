@@ -1,0 +1,5 @@
+n = int(input())
+arr = map(int, input().split())
+highest_score=arr.remove(max(arr))
+runner_score=max(arr)
+print(runner_score)
