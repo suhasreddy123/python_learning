@@ -26,7 +26,7 @@ for i in range(2,num):
     else:
         list.append(i)
 print(list[:10])"""
-#print prime numbers in range:
+"""#print prime numbers in range:
 lower_limt=int(input())
 upper_limit=int(input())
 for i in range(lower_limt,upper_limit):
@@ -35,4 +35,14 @@ for i in range(lower_limt,upper_limit):
             print("",end="")
             break
     else:
-        print(i,end=" ")
+        print(i,end=" ")"""
+import math
+n=int(input())
+for i in range(2,(int(math.sqrt(n))+1)):
+    if(n%i==0):
+        print(n,"not prime")
+        break
+else:
+    print(n,"prime number")
+
+

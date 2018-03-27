@@ -7,15 +7,11 @@ def string_oddeven(inputs):
                 even_chars.append(input[i])
             else:
                 odd_chars.append(input[i])
-
         print("".join(even_chars) + " " + "".join(odd_chars))
-
-
 t = int(input())
 inputs = []
 for i in range(t):
     inputs.append(input())
-
 string_oddeven(inputs)
 
 

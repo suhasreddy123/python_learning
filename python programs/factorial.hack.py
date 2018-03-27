@@ -7,4 +7,4 @@ def factorial(n):
 #result = factorial(n)
 #print(result)
 print(factorial(50))
-print(len(str(factorial(50))))
+#print(len(str(factorial(50))))

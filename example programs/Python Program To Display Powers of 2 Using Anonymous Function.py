@@ -6,4 +6,6 @@ def power(num):
         print("2 power",i,result)
 
 power(2);
+a=lambda x:x**2
+print(a(3))
 

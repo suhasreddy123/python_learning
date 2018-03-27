@@ -11,8 +11,9 @@ sum_result=[[0,0,0],
 diff_result=[[0,0,0],
              [0,0,0],
              [0,0,0]]
-for x in range(len(a)):
-    for j in range(len(a[0])):
+for x in range(3):
+    for j in range(3):
+        print(x,j)
         sum_result[x][j]=a[x][j]+b[x][j]
         diff_result[x][j]=b[x][j]-a[x][j]
 for r in sum_result:
