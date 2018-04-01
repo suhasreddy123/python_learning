@@ -7,6 +7,9 @@ list2=[]
 for item in range(len(a)):
     list2.append(a[item])
 list2.sort()
-result=(list(combinations_with_replacement(list2,b)))
+for item in list2:
+    print(item)
+result=(list(combinations(list2,b)))
+print(result)
 for j in result:
     print("".join(j))
