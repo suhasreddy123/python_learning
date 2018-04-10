@@ -1,0 +1,5 @@
+n_of_stocks=int(input())
+a= set(list(map(int, input().strip().split(' '))))
+n_of_stocks2=int(input())
+b= set(list(map(int, input().strip().split(' '))))
+print(len(a-b)+len(b-a))

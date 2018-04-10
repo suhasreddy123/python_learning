@@ -21,7 +21,6 @@ def print_tree(employee_list):
         return manager_dict
     tree_map = get_parent_child_map()
     print(tree_map)
-
     def print_node(parent,indent):
         node_xml = ""
         for node in parent:

@@ -13,16 +13,17 @@ here bit value is m. for second column bit_no is m-1 ans so on..
 """
 import numpy as np
 
-
 def create_patterns(n, m):
     num_of_patterns = None
     final_set = []
     for bit_no in reversed(range(n)):
+        print("bit_no=",bit_no)
         data = []
         for element in range(m + 1):
+            print("element=",element)
             data = data + [element] * (pow(m+ 1, bit_no))
 
-        # print("data=",data)
+            print("data=",data)
         current_pattern_len = len(data)
         if num_of_patterns is None:
             num_of_patterns = len(data)
@@ -31,6 +32,7 @@ def create_patterns(n, m):
 
         # print(data)
         final_set.append(data * m_factor)
+        print(final_set)
 
     np_data = np.array(final_set)
     np_data = np_data.transpose()
@@ -43,5 +45,5 @@ def create_patterns(n, m):
 
 if __name__ == '__main__':
     print(create_patterns(2, 1))
-    print(create_patterns(2, 2))
-    print(create_patterns(3, 2))
+    #print(create_patterns(2, 2))
+    #print(create_patterns(3, 2))
